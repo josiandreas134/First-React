@@ -3,7 +3,6 @@ import {Breadcrumb, BreadcrumbItem, Button, Row, Label,Col } from 'reactstrap'
 import {Link} from 'react-router-dom'
 import { Control, LocalForm, Errors } from 'react-redux-form';
 
-
 const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !(val) || (val.length <=len);
 const minLength = (len) => (val) => val && (val.length >=len);
@@ -161,7 +160,7 @@ class Contact extends Component {
                             </Row>
                             <Row className="form-group">
                                 <Col md={{size:6,offset:2}}>
-                                    <div className="form-checl">
+                                    <div className="form-check">
                                         <Label check>
                                             <Control.checkbox model=".agree" name="agree"
                                                 className="form-checked-input"
